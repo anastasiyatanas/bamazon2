@@ -1,0 +1,12 @@
+use bamazon;
+create table products(
+id int auto_increment not NULL,
+name varchar(50),
+department varchar(50),
+price int(10),
+stock int(10),
+primary key(id)
+)
+insert into products(name, department, price, stock)
+values("Boots", "Broadway Shoe Store", 50, 5), ("Jacket", "Target", 20, 30), ("Nightmare Before Christmas Sweater", "Hot-Topic", 35, 12), ("nike shoes", "Nike", 70, 7), ("Jeans", "Forever 21", 35, 4), ("Hoodie", "Nike", 60, 17), ("Leggings", "Forever 21", 15, 20), ("Doctor Who T-Shirt", "Hot Topic", 35, 10), ("Heels", "Broadway Shoes", 75, 5), ("Grumpy cat shockes", "H&M", 15, 25);
+select * from products
